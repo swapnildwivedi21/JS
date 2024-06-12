@@ -45,3 +45,50 @@ const myFunction  =function(){
 
 console.log(typeof bigNumber)
 console.log(outsideTemp)
+console.log(typeof heroes)
+console.log(typeof myobj)
+console.log(typeof myFunction)
+
+// Return types
+// Primitive Datatype
+// String --> String
+//Integer/float(Number) -->Number
+//Boolean --> Boolean
+//null -->Object
+//undefined -->Undefined
+//Biginteger -->Bigint
+//Symbol --->Symbol
+
+//Reference (non primitive) data type
+//Arrays-->Object
+//Objects-->object
+//Function ---> Function
+
+//JS is dynamically  typed language
+
+//////////
+
+// Stack(Primitive) --> we get a copy in stack
+
+// Heap(Non-Primitive)---> we get a reference here 
+
+let myYoutubename = "swapnildwivedi"
+let anothername = myYoutubename
+
+console.log(anothername)
+
+console.log(myYoutubename)
+anothername = "pikapika"
+console.log(anothername)
+
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1 // here reference is given 
+
+user2.email = "aws@gmail.com" // now value will be changed
+console.log(user1.email)
+console.log(user2.email)
+
